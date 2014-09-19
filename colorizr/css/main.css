@@ -78,10 +78,56 @@ a:hover {
 #section-bookmarklet {
     background-color: lightblue;
     color: rgb(7, 55, 99);
+    position: relative;
 }
 
 #section-bookmarklet a {
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
+}
+
+#cloud-1 {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+#cloud-2 {
+    position: absolute;
+    top: 250px;
+    right: -70px;
+}
+
+/* Great tutorial at http://thecodeplayer.com/walkthrough/pure-css3-animated-clouds-background */
+.cloud {
+    width: 300px; height: 90px;
+    background: #fff;
+
+    border-radius: 300px;
+    -moz-border-radius: 300px;
+    -webkit-border-radius: 300px;
+
+    position: relative;
+}
+
+.cloud:before, .cloud:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 150px; height: 120px;
+    position: absolute; top: -22px; left: 15px;
+
+    border-radius: 150px;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+    width: 180px; height: 180px;
+    top: -77px; left: auto; right: 22px;
 }
 
 #section-playground {
