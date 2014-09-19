@@ -34,6 +34,7 @@ a:hover {
 .section {
     padding: 100px;
     text-align: center;
+    position: relative;
 }
 
 #section-title {
@@ -134,9 +135,27 @@ a:hover {
     background-image: url(../img/project_papper.png);
 }
 
+/* Nice intro at http://tympanus.net/codrops/2013/10/03/a-collection-of-separator-styles/ */
+#section-playground:before {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    top: -50px;
+    background: lightblue;
+}
+
+#section-playground h2 {
+    font-size: 55px;
+}
+
 #playground {
     width: 80%;
-    margin-top: 40px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
