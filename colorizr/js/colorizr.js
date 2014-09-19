@@ -255,21 +255,6 @@
             'data-name': name
         });
 
-        function getTargetElements() {
-            // $(target) is not cached since page might dynamically create new matching elements.
-
-            if (target === '') {
-                return $('');
-            }
-
-            var targetWithoutColorizrPanel = 'body > *:not(.clrz-dont-colorize) ' + target;
-            return $(targetWithoutColorizrPanel);
-        }
-
-        function foundTargetElements() {
-            return getTargetElements().length > 0;
-        }
-
         function getColor() {
 
             if (options.useColorInInputfield) {
@@ -286,9 +271,9 @@
 
         function setColor(color) {
             if (manipulation === 'html') {
-                getTargetElements().attr(name, color);
+                getTargetElements(target).attr(name, color);
             } else {
-                getTargetElements().css(name, color);
+                getTargetElements(target).css(name, color);
             }
         }
 
@@ -320,7 +305,7 @@
             hide: setColor
         });
         colorinput.spectrum('set', getColor());
-        colorinput.spectrum((foundTargetElements() ? 'enable' : 'disable'));
+        colorinput.spectrum((getTargetElements(target).length > 0) ? 'enable' : 'disable');
 
         if (!options.keepSaveDisabled) {
             enableSave();
@@ -334,24 +319,38 @@
 
     }
 
-    var lastTarget = null;
+    function getTargetElements(target) {
+        // $(target) is not cached since page might dynamically create new matching elements.
+
+        if (target === '') {
+            return $('');
+        }
+
+        return $(target).filter(function () {
+            if ($(this).hasClass('clrz-dont-colorize')) {
+                return false;
+            }
+            return $(this).parents().filter(function () {
+                return $(this).hasClass('clrz-dont-colorize');
+            }).length === 0;
+        });
+    }
+
+    var lastTargetElements = null;
 
     function focusTarget() {
         unfocusTarget();
         /*jshint validthis:true */
         var newTarget = $(this).val();
-        if (newTarget !== '') {
-            var newTargetWithoutColorizrPanel = 'body > *:not(.clrz-dont-colorize) ' + newTarget;
-            $(newTargetWithoutColorizrPanel).css('outline', '2px dashed red');
-            lastTarget = newTarget;
-        }
+        var newTargetElements = getTargetElements(newTarget);
+        newTargetElements.css('outline', '2px dashed red');
+        lastTargetElements = newTargetElements;
     }
 
     function unfocusTarget() {
-        if (lastTarget !== null) {
-            var lastTargetWithoutColorizrPanel = 'body > *:not(.clrz-dont-colorize) ' + lastTarget;
-            $(lastTargetWithoutColorizrPanel).css('outline', 'none');
-            lastTarget = null;
+        if (lastTargetElements !== null) {
+            lastTargetElements.css('outline', 'none');
+            lastTargetElements = null;
         }
     }
 
