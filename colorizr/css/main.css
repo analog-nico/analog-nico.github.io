@@ -37,8 +37,8 @@ a:hover {
 }
 
 #section-title {
-    background-color: gray;
-    box-shadow: inset 0 200px 300px 100px rgba(0, 0, 0, 0.4);
+    background-color: rgb(93, 126, 16);
+    box-shadow: inset 0 200px 300px 100px rgba(255, 255, 255, 0.4);
 }
 
 .header-underline {
@@ -68,6 +68,7 @@ a:hover {
 }
 
 #section-playground {
+    background-image: url(../img/project_papper.png);
 }
 
 #playground {
