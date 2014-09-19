@@ -181,11 +181,10 @@ a:hover {
 #footer {
     text-align: center;
     font-size: 14px;
-    color: #aaa;
     padding: 0.5em;
-    background-color: black;
+    background-color: rgb(112, 96, 96);
 }
 
-#footer a {
-    color: #aaa;
+#footer, #footer a {
+    color: rgb(186, 186, 186);
 }
