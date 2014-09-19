@@ -10,41 +10,33 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=1200">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Gudea|Pacifico' rel='stylesheet' type='text/css'>
 
-        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Gudea' rel='stylesheet' type='text/css'>
-
+        <link rel="stylesheet" href="css/normalize.min.css"/>
         <link rel="stylesheet" href="css/main.css">
 
         <!--script src="js/vendor/modernizr-2.6.2.min.js"></script-->
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
         <a href="https://github.com/analog-nico/colorizr"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
 
         <div id="section-title" class="section">
             <h1>Colorizr.js</h1>
             <div class="header-underline">
-                <div class="header-underline-segment" style="background-color: hsl(0, 60%, 60%);">
-                </div><div class="header-underline-segment" style="background-color: hsl(30, 60%, 60%);">
-                </div><div class="header-underline-segment" style="background-color: hsl(60, 60%, 60%);">
-                </div><div class="header-underline-segment" style="background-color: hsl(90, 60%, 60%);">
-                </div><div class="header-underline-segment" style="background-color: hsl(120, 60%, 60%);">
-                </div><div class="header-underline-segment" style="background-color: hsl(150, 60%, 60%);">
-                </div><div class="header-underline-segment" style="background-color: hsl(180, 60%, 60%);">
-                </div><div class="header-underline-segment" style="background-color: hsl(210, 60%, 60%);">
-                </div><div class="header-underline-segment" style="background-color: hsl(240, 60%, 60%);">
-                </div><div class="header-underline-segment" style="background-color: hsl(270, 60%, 60%);">
-                </div><div class="header-underline-segment" style="background-color: hsl(300, 60%, 60%);">
-                </div><div class="header-underline-segment" style="background-color: hsl(330, 60%, 60%);">
-                </div>
+                <div class="header-underline-segment" style="background-color: hsl(0, 60%, 60%);"></div>
+                <div class="header-underline-segment" style="background-color: hsl(30, 60%, 60%);"></div>
+                <div class="header-underline-segment" style="background-color: hsl(60, 60%, 60%);"></div>
+                <div class="header-underline-segment" style="background-color: hsl(90, 60%, 60%);"></div>
+                <div class="header-underline-segment" style="background-color: hsl(120, 60%, 60%);"></div>
+                <div class="header-underline-segment" style="background-color: hsl(150, 60%, 60%);"></div>
+                <div class="header-underline-segment" style="background-color: hsl(180, 60%, 60%);"></div>
+                <div class="header-underline-segment" style="background-color: hsl(210, 60%, 60%);"></div>
+                <div class="header-underline-segment" style="background-color: hsl(240, 60%, 60%);"></div>
+                <div class="header-underline-segment" style="background-color: hsl(270, 60%, 60%);"></div>
+                <div class="header-underline-segment" style="background-color: hsl(300, 60%, 60%);"></div>
+                <div class="header-underline-segment" style="background-color: hsl(330, 60%, 60%);"></div>
             </div>
-            <h3>Design the perfect color palette for your new webpage.</h3>
+            <div>Design the perfect color palette for your new webpage.</div>
         </div>
         <div id="section-get-started" class="section">
             <h2>Start Colorizring Your Webpage</h2>
@@ -52,28 +44,29 @@
         </div>
         <div id="section-bookmarklet" class="section">
             <h1><a href="javascript:(function(){var%20s=document.createElement('script');s.setAttribute('src','https://analog-nico.github.io/colorizr/js/colorizr.bundled.min.js');document.getElementsByTagName('head')[0].appendChild(s);})();">Colorizrize</a></h1>
-            <h3>Add this bookmarklet to your favorites!</h3>
+            <div>
+                This bookmarklet lets you add colorizr.js to any webpage on the fly.<br/>
+                Add it to your favorites!
+            </div>
         </div>
         <div id="section-playground" class="section">
-            <h2>Try out colorizr.js by using the bookmarklet above</h2>
-            <div id="playground" class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h3>#playground</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4">.col-xs-4</div>
-                    <div class="col-xs-4">.col-xs-4</div>
-                    <div class="col-xs-4">.col-xs-4</div>
-                </div>
+            <h2>Try out colorizr.js by clicking the bookmarklet above</h2>
+            <div id="playground">
+                <div style="float: right; width: 200px; height: 150px;">#playground div</div>
+                #playground
+                <h3>#playground h3</h3>
+                <p>#playground p:first <span style="color: #999;">- Cupcake ipsum dolor sit amet pie. Carrot cake bear claw bonbon sweet roll candy canes biscuit. Sesame snaps lemon drops sweet caramels I love. Pie cookie applicake jelly-o sweet ice cream sweet applicake.</span></p>
+                <p>#playground p <span style="color: #999">- I love I love croissant. Jujubes cupcake I love bonbon topping macaroon sesame snaps powder jujubes. Chocolate cheesecake chocolate cake sweet roll.</span></p>
+                <p>#playground p:last <span style="color: #999;">- Sugar plum bear claw jujubes macaroon pastry ice cream wafer. Bear claw oat cake cookie I love dessert. Brownie chupa chups chupa chups sesame snaps candy canes.</span></p>
             </div>
+        </div>
+        <div id="footer">
+            <a href="https://github.com/analog-nico/colorizr">Sources on GitHub</a> |
+            <a href="impressum.html">Impressum</a>
         </div>
 
         <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script-->
 
