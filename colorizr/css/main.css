@@ -1,9 +1,9 @@
-h1, h2 {
-    font-family: 'Pacifico', cursive;
+body {
+    font-family: 'Gudea', sans-serif;
 }
 
-h3 {
-    font-family: 'Gudea', sans-serif;
+h1, h2 {
+    font-family: 'Pacifico', cursive;
 }
 
 h1 {
@@ -14,15 +14,18 @@ h2 {
     font-size: 40px;
 }
 
+a:hover {
+    color: rgb(66, 139, 202);
+}
+
 .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px;
+    text-align: center;
 }
 
 #section-title {
-    text-align: center;
     background-color: gray;
-    box-shadow: inset 0 0 200px 100px #aaa;
+    box-shadow: inset 0 200px 300px 100px rgba(0, 0, 0, 0.4);
 }
 
 .header-underline {
@@ -36,7 +39,6 @@ h2 {
 }
 
 #section-get-started {
-    text-align: center;
 }
 
 #ytplayer {
@@ -44,6 +46,16 @@ h2 {
 }
 
 #section-bookmarklet {
-    text-align: center;
     background-color: lightblue;
+}
+
+#section-playground {
+}
+
+#playground {
+    margin-top: 40px;
+    text-align: left;
+    border: 4px dashed #555;
+    border-radius: 20px;
+    background-color: #bbb;
 }
