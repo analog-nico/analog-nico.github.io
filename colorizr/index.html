@@ -47,7 +47,21 @@
         </div>
         <div id="section-bookmarklet" class="section">
             <div style="position: relative; z-index: 1;">
-                <h1><a href="javascript:(function(){var%20s=document.createElement('script');s.setAttribute('src','https://analog-nico.github.io/colorizr/js/colorizr.bundled.min.js');document.getElementsByTagName('head')[0].appendChild(s);})();">Colorizrize</a></h1>
+                <h1>
+                    <div id='bookmarklet-container' style="position: relative; display: inline-block;">
+                        <a id="bookmarklet" href="javascript:(function(){var%20s=document.createElement('script');s.setAttribute('src','https://analog-nico.github.io/colorizr/js/colorizr.bundled.min.js');document.getElementsByTagName('head')[0].appendChild(s);})();">
+                            Colorizrize
+                        </a>
+                        <div id="action-dude">&nbsp;Dude&nbsp;</div>
+                        <div id="action-click-here">Click here!</div>
+                        <div id="action-arrow">
+                            <svg width="129px" height="99px">
+                                <path fill="none" stroke="#073763" stroke-opacity="1" stroke-width="6" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" id="svg_1" d="M 77.2639 3 L 126.254 32.9248 L 47.3724 77.5758 L 67.0919 96.427 L 3 88.4897 L 29.6231 29.9482 L 34.5547 60.7089 L 77.2639 3 Z" class="" transform=""></path>
+                            </svg>
+                        </div>
+                        <div id="action-dude2">&nbsp;Dude!&nbsp;</div>
+                    </div>
+                </h1>
                 <div>
                     This bookmarklet lets you add colorizr.js to any webpage on the fly.<br/>
                     Add it to your favorites!
@@ -73,10 +87,11 @@
             <a href="impressum.html">Impressum &amp; Datenschutz</a>
         </div>
 
-        <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.scrollfire.min.js"></script>
 
-        <script src="js/main.js"></script-->
+        <script src="js/main.js"></script>
 
         <!-- Google Analytics -->
         <!--script>

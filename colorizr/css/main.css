@@ -88,6 +88,143 @@ a {
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
 }
 
+#action-dude, #action-click-here, #action-dude2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 55px;
+    position: absolute;
+    color: transparent;
+}
+
+#action-dude {
+    top: -60px;
+    right: -20px;
+    -webkit-transform: rotate(350deg);
+    -moz-transform: rotate(350deg);
+    -o-transform: rotate(350deg);
+    transform: rotate(350deg);
+}
+
+@-webkit-keyframes flash1 {
+    0% { color: rgb(7, 55, 99); }
+    10% { color: rgb(7, 55, 99); }
+    20% { color: lightblue; }
+    100% { color: lightblue; }
+}
+@keyframes flash1 {
+    0% { color: rgb(7, 55, 99); }
+    10% { color: rgb(7, 55, 99); }
+    20% { color: lightblue; }
+    100% { color: lightblue; }
+}
+#action-dude.flash {
+    -webkit-animation: flash1 3s linear infinite;
+    -moz-animation: flash1 3s linear infinite;
+    -ms-animation: flash1 3s linear infinite;
+    -o-animation: flash1 3s linear infinite;
+    animation: flash1 3s linear infinite;
+}
+
+#action-click-here {
+    top: -50px;
+    right: -300px;
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+
+@-webkit-keyframes flash2 {
+    0% { color: lightblue; }
+    19% { color: lightblue; }
+    20% { color: rgb(7, 55, 99); }
+    30% { color: rgb(7, 55, 99); }
+    35% { color: lightblue; }
+    40% { color: rgb(7, 55, 99); }
+    60% { color: rgb(7, 55, 99); }
+    65% { color: lightblue; }
+    100% { color: lightblue; }
+}
+@keyframes flash2 {
+    0% { color: lightblue; }
+    19% { color: lightblue; }
+    20% { color: rgb(7, 55, 99); }
+    30% { color: rgb(7, 55, 99); }
+    35% { color: lightblue; }
+    40% { color: rgb(7, 55, 99); }
+    60% { color: rgb(7, 55, 99); }
+    65% { color: lightblue; }
+    100% { color: lightblue; }
+}
+#action-click-here.flash {
+    -webkit-animation: flash2 3s linear infinite;
+    -moz-animation: flash2 3s linear infinite;
+    -ms-animation: flash2 3s linear infinite;
+    -o-animation: flash2 3s linear infinite;
+    animation: flash2 3s linear infinite;
+}
+
+#action-arrow {
+    position: absolute;
+    top: -10px;
+    right: -160px;
+}
+
+#action-arrow path {
+    stroke: transparent;
+}
+
+@-webkit-keyframes flash3 {
+    0% { stroke: lightblue; }
+    40% { stroke: lightblue; }
+    50% { stroke: rgb(7, 55, 99); }
+    70% { stroke: #610808; }
+    75% { stroke: lightblue; }
+    80% { stroke: #610808; }
+    85% { stroke: #cf0808; }
+    90% { stroke: lightblue; }
+    100% { stroke: lightblue; }
+}
+@keyframes flash3 {
+    0% { stroke: lightblue; }
+    40% { stroke: lightblue; }
+    50% { stroke: rgb(7, 55, 99); }
+    70% { stroke: #610808; }
+    75% { stroke: lightblue; }
+    80% { stroke: #610808; }
+    85% { stroke: #cf0808; }
+    90% { stroke: lightblue; }
+    100% { stroke: lightblue; }
+}
+#action-arrow.flash path {
+    -webkit-animation: flash3 3s linear infinite;
+    -moz-animation: flash3 3s linear infinite;
+    -ms-animation: flash3 3s linear infinite;
+    -o-animation: flash3 3s linear infinite;
+    animation: flash3 3s linear infinite;
+}
+
+#action-dude2 {
+    bottom: -170px;
+    right: -60px;
+    color: transparent;
+}
+
+@-webkit-keyframes flash4 {
+    0% { color: rgb(7, 55, 99); }
+    100% { color: lightblue; }
+}
+@keyframes flash4 {
+    0% { color: rgb(7, 55, 99); }
+    100% { color: lightblue; }
+}
+#action-dude2.flash {
+    -webkit-animation: flash4 0.5s linear infinite;
+    -moz-animation: flash4 0.5s linear infinite;
+    -ms-animation: flash4 0.5s linear infinite;
+    -o-animation: flash4 0.5s linear infinite;
+    animation: flash4 0.5s linear infinite;
+}
+
 #cloud-1 {
     position: absolute;
     bottom: -90px;
