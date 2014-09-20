@@ -204,17 +204,17 @@ a {
 }
 
 #action-dude2 {
-    bottom: -170px;
+    bottom: -180px;
     right: -60px;
     color: transparent;
 }
 
 @-webkit-keyframes flash4 {
-    0% { color: rgb(7, 55, 99); }
+    0% { color: #cf0808; }
     100% { color: lightblue; }
 }
 @keyframes flash4 {
-    0% { color: rgb(7, 55, 99); }
+    0% { color: #cf0808; }
     100% { color: lightblue; }
 }
 #action-dude2.flash {
