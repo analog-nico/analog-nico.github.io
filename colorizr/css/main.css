@@ -24,11 +24,6 @@ h2 {
 
 a {
     color: rgb(66, 139, 202);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 .section {
