@@ -38,7 +38,7 @@ a {
 }
 
 #section-title h1 {
-    color: rgb(106, 168, 79);
+    color: rgb(179, 30, 0);
 }
 
 .header-underline {
@@ -70,7 +70,8 @@ a {
 }
 
 #section-get-started h2 {
-    color: rgb(124, 177, 102);
+    color: rgb(186, 186, 186);
+    text-shadow: 2px 2px 4px black;
 }
 
 #ytplayer {
